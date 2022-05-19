@@ -1025,7 +1025,10 @@ type OpenAppQrcodeCreateRsp struct {
 
 type OpenAppQrcodeCreate struct {
 	ErrorResponse
-	QrCodeUrl string `json:"qr_code_url"`
+	QrCodeUrl string `json:"qr_code_url"` 
+	//支付宝中的API中有3个结果
+	QrCodeUrlCircleWhite string `json:"qr_code_url_circle_white"`
+        QrCodeUrlCircleBlue  string `json:"qr_code_url_circle_blue"`
 }
 
 // ===================================================
